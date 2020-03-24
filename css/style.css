@@ -148,9 +148,13 @@ label {
     font-size: 50px;
     background-color: #dfe4ea;
 }
+.b4_carousel a{
+ font-size: 18px;
+}
 .b4_carousel a:hover{
 text-decoration: none;
 color: red;
+ font-size:25px;
 }
 
 /*SYMPTOMS*/
