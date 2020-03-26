@@ -130,6 +130,8 @@ label {
         z-index: 9999;
         float: none;
     }
+
+    
 }
 /*Carousel*/
 .carousel-inner img {
@@ -156,6 +158,19 @@ text-decoration: none;
 color: red;
  font-size:25px;
 }
+@media (max-width: 768px){
+    .b4_carousel{
+        font-size: 25px;
+}
+.b4_carousel a{
+ font-size: 10px;
+}
+.b4_carousel a:hover{
+text-decoration: none;
+color: red;
+ font-size:18px;
+}
+}
 
 /*SYMPTOMS*/
 #symptoms{
@@ -164,9 +179,7 @@ color: red;
 .symp ul{
     font-size: 30px;
 }
-.symp{
-    /*background-color: #f1f2f6;*/
-}
+
 .symp ul li {
     font-size: 20px;
     margin-left : 60px;
@@ -174,8 +187,22 @@ color: red;
 }    
 .symp h1{
     text-align: center;
-    /*font-size: 60px;*/
 }
+@media (max-width: 768px)
+{
+.symp ul{
+    font-size: 18px;
+}
+.symp ul li {
+    font-size: 15px;
+    
+}    
+.symp h1{
+    font-size: 30px;
+}
+}
+
+
 /*Cure*/
 #cure{
 padding-top: 35px;
@@ -199,7 +226,21 @@ padding-top: 35px;
     font-size: 26px;
     margin-left: 33px;
 }
-
+@media (max-width: 768px){
+    .cure ul{
+    font-size: 18px;
+}
+.cure ul li {
+    font-size: 15px;
+   
+}    
+.cure h1{
+    font-size: 30px;
+}
+.cure p{
+    font-size: 18px;
+}
+}
 
 
 
