@@ -205,11 +205,7 @@ color: red;
 
 /*Cure*/
 #cure{
-padding-top: 35px;
-}
-.cure
-{
-    /*background-color: #f1f2f6;*/
+padding-top: 65px;
 }
 .cure ul{
     font-size: 26px;
@@ -242,5 +238,59 @@ padding-top: 35px;
 }
 }
 
+
+/*STATISTICS*/
+#stats{
+    padding-top: 65px;
+}
+.stats h1{
+    text-align: center;
+}
+
+.stats span{
+    font-size: 24px;
+    line-height: 20px;
+    margin-left: 2%;
+}
+.stats p{
+    text-align: center;
+    font-size: 24px;
+}
+
+@media (max-width: 768px){
+    .stats h1{
+    font-size: 30px;
+}
+.stats p,.stats span{
+    font-size: 18px;
+}
+}
+/*SELECT*/
+#select{
+text-align: center;
+}
+#mySelect{
+    margin-right:25px; 
+}
+
+/*Table*/
+.b4_table{
+    margin-top: 2%;
+    margin-left: 22%;
+}
+table{
+    /*background-color: blue;*/
+    border:2px solid black;
+    width: 70%;
+}
+thead th{
+    text-align: center;
+}
+th,td,tr{
+    border:2px dotted black;
+}
+td{
+    color: red;
+}
 
 
