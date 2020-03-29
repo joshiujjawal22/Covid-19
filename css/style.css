@@ -293,4 +293,34 @@ td{
     color: red;
 }
 
+/*Notice_board*/
+.n_b{
+margin-left:22%;
+background-color: black;
+height:10vw;
+width:54vw;
+color: white;
+overflow: auto;
+}
+.n_b_h{
+background-color: #8c8c5a;
+height: 3.3vh;
+width: 54vw;
+text-align: center;
+top=0;
+position: absolute;
+z-index: 9
+}
+.n_b_v{
+background-color: #8c8c5a;
+height: 20.4vh;
+width: 1.7vw;
+text-align: center;
+position: absolute;
+}
+.n_b_m{
+margin-left: 17%;
+padding-top: 3.3vh;
+}
+
 
