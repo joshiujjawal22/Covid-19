@@ -297,7 +297,7 @@ td{
 .n_b{
 margin-left:22%;
 background-color: black;
-height:10vw;
+height:20vh;
 width:54vw;
 color: white;
 overflow: auto;
@@ -313,7 +313,7 @@ z-index: 9
 }
 .n_b_v{
 background-color: #8c8c5a;
-height: 20.4vh;
+height: 20vh;
 width: 1.7vw;
 text-align: center;
 position: absolute;
@@ -322,5 +322,4 @@ position: absolute;
 margin-left: 17%;
 padding-top: 3.3vh;
 }
-
 
