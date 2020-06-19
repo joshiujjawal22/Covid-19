@@ -384,18 +384,26 @@ fetch('https://api.covid19api.com/summary')
 
            	// Country Name
            	x.insertCell().innerHTML=data['Countries'][i-1]['Country'];
+           	// Styling
            	tbl.rows[i].cells[0].style.color="black";
            	tbl.rows[i].cells[0].style.fontWeight="bold";
-           	
+
 
            	// Confirmed cases
            	x.insertCell().innerHTML=data['Countries'][i-1]['TotalConfirmed'];
+           	// Styling
+           	tbl.rows[i].cells[1].style.color="Blue";
+
 
            	// Recovered Cases
            	x.insertCell().innerHTML=data['Countries'][i-1]['TotalRecovered'];
+           	// Styling
+           	tbl.rows[i].cells[2].style.color="green";
 
            	// Total Deaths
            	x.insertCell().innerHTML=data['Countries'][i-1]['TotalDeaths'];
+           	// Styling
+           	tbl.rows[i].cells[3].style.color="red";
            	
            }
 
