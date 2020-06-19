@@ -2,12 +2,14 @@
  @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
  body {
-    background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEX4+Pj09PQf/c7fAAAAGklEQVR4Xq3MIQEAAADDIPqX/kvMIMEWEm8O7b0/wewc/NcAAAAASUVORK5CYII=) repeat;
+    /*background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEX4+Pj09PQf/c7fAAAAGklEQVR4Xq3MIQEAAADDIPqX/kvMIMEWEm8O7b0/wewc/NcAAAAASUVORK5CYII=) repeat;*/
     margin: 0;
+    background-color: #2d3436;
 
 }
 * {
     scroll-behavior: smooth;
+    color: #dfe6e9;
 }
 /*NAVIGATION BAR*/
 header div nav 
@@ -149,7 +151,7 @@ label {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     font-size: 50px;
-    background-color: #dfe4ea;
+    background-color: #2d3436;
 }
 .b4_carousel a{
  font-size: 18px;
