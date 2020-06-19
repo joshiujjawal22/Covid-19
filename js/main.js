@@ -408,3 +408,53 @@ fetch('https://api.covid19api.com/summary')
            }
 
         });
+
+
+        // Statewise stats of India
+
+        fetch('https://api.covid19india.org/data.json')
+        .then(response => response.json()) //To stringify the output
+        .then(data => {
+
+           // To select table
+           var tbl_india=document.getElementById("tbl_india");
+           // Loop to access all the countries 
+           for(var i=1;i<(data.statewise.length);i++){
+           	// Insertion of rows
+           	var x=tbl_india.insertRow(); 
+
+           	/* ----------------Insertion of cells(columns)----------------------*/
+
+           	// Country Name
+           	x.insertCell().innerHTML=data['statewise'][i]['state'];
+           	// Styling
+           	tbl_india.rows[i].cells[0].style.color="black";
+           	tbl_india.rows[i].cells[0].style.fontWeight="bold";
+
+
+           	// Confirmed cases
+           	x.insertCell().innerHTML=data['statewise'][i]['confirmed'];
+           	// Styling
+           	tbl_india.rows[i].cells[1].style.color="Blue";
+
+
+           	// Recovered Cases
+           	x.insertCell().innerHTML=data['statewise'][i]['recovered'];
+           	// Styling
+           	tbl_india.rows[i].cells[2].style.color="green";
+
+           	// Total Deaths
+           	x.insertCell().innerHTML=data['statewise'][i]['deaths'];
+           	// Styling
+           	tbl_india.rows[i].cells[3].style.color="red";
+
+           	// Total number of active cases
+           	x.insertCell().innerHTML=data['statewise'][i]['active'];
+           	// Styling
+           	tbl_india.rows[i].cells[4].style.color="#0984e3";
+           	
+           }
+           console.log(data);
+
+
+        });
