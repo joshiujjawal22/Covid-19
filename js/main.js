@@ -1,3 +1,4 @@
+// Starting stats:
 function get(){
 
 var a=document.getElementById("mySelect");
@@ -364,3 +365,38 @@ else if(a.options[a.selectedIndex].text=="30 MAR 2020"){
 }
 
 }
+
+// Daily worldwide stats:
+
+// Fetching using covid19 API
+fetch('https://api.covid19api.com/summary')
+        .then(response => response.json()) //To stringify the output
+        .then(data => {
+
+           // To select table
+           var tbl=document.getElementById("tbl");
+           // Loop to access all the countries 
+           for(var i=1;i<=(data.Countries.length);i++){
+           	// Insertion of rows
+           	var x=tbl.insertRow(); 
+
+           	/* ----------------Insertion of cells(columns)----------------------*/
+
+           	// Country Name
+           	x.insertCell().innerHTML=data['Countries'][i-1]['Country'];
+           	tbl.rows[i].cells[0].style.color="black";
+           	tbl.rows[i].cells[0].style.fontWeight="bold";
+           	
+
+           	// Confirmed cases
+           	x.insertCell().innerHTML=data['Countries'][i-1]['TotalConfirmed'];
+
+           	// Recovered Cases
+           	x.insertCell().innerHTML=data['Countries'][i-1]['TotalRecovered'];
+
+           	// Total Deaths
+           	x.insertCell().innerHTML=data['Countries'][i-1]['TotalDeaths'];
+           	
+           }
+
+        });
