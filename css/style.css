@@ -4,7 +4,7 @@
  body {
     /*background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEX4+Pj09PQf/c7fAAAAGklEQVR4Xq3MIQEAAADDIPqX/kvMIMEWEm8O7b0/wewc/NcAAAAASUVORK5CYII=) repeat;*/
     margin: 0;
-    background-color: #2d3436;
+    background-color: #5f27cd;
 
 }
 * {
@@ -159,7 +159,7 @@ label {
 .b4_carousel a:hover{
 text-decoration: none;
 color: red;
- font-size:25px;
+ font-size:35px;
 }
 @media (max-width: 768px){
     .b4_carousel{
@@ -287,10 +287,12 @@ thead th{
     text-align: center;
 }
 th,td,tr{
-    border:5px double orange;
+    border:5px double #01a3a4;
+    font-weight: bold;
 }
 td{
     color: red;
+
 }
 
 /*Notice_board*/
