@@ -17,7 +17,7 @@ header div nav
     background: #dfe4ea;
     position: fixed;
 }
-/*header {
+header {
     background: #ecf0f1;
     height: 60px;
     padding-top: 7px;
@@ -28,7 +28,7 @@ header div nav
     margin: 0 auto;
     padding: 0px 20px;
     position: relative;
-}*/
+}
 nav{
     z-index: 99;top: 0;
 }
